@@ -15,11 +15,15 @@ public:
     explicit DataOfStodent(QWidget *parent = nullptr);
     ~DataOfStodent();
 
+protected:
+    QString set_password, password;
+
 private:
     Ui::DataOfStodent *ui;
 
 private slots:
     void call_Auth();
+    void work_window();
 
 signals:
     void call_auth_windows();
