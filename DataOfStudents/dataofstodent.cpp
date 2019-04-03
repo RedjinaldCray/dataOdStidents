@@ -8,8 +8,12 @@ DataOfStodent::DataOfStodent(QWidget *parent) :
     ui(new Ui::DataOfStodent)
 {
     ui->setupUi(this);
-    connect(ui->btnAuth, SIGNAL(clicked()),this, SLOT(call_Auth()));
-    connect(this, SIGNAL(verify_true()), SLOT(work_window()));
+    connect(ui->btnTeacher, SIGNAL(clicked()),this, SLOT(call_Auth()));
+    connect(ui->btnStudent, SIGNAL(clicked()), this, SLOT(call_Auth()));
+
+    auth_form = new Authentication(this);
+    auth_form->hide();
+    connect(auth_form, SIGNAL(verify_true()), SLOT(work_window()));
 }
 
 DataOfStodent::~DataOfStodent()
@@ -18,10 +22,10 @@ DataOfStodent::~DataOfStodent()
 }
 
 void DataOfStodent::call_Auth(){
-    Authentication *auth_window = new Authentication;
-    auth_window->show();
+    auth_form->show();
 }
 
 void DataOfStodent::work_window() {
     qDebug()<<"ITS OKEY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+    this->show();
 }

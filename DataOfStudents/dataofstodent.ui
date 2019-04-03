@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>419</width>
-    <height>176</height>
+    <width>450</width>
+    <height>143</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>DataOfStodent</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>30</y>
+      <x>30</x>
+      <y>10</y>
       <width>371</width>
       <height>71</height>
      </rect>
@@ -31,16 +31,16 @@
       <number>0</number>
      </property>
      <item row="0" column="3">
-      <widget class="QPushButton" name="btnShedule">
+      <widget class="QPushButton" name="btnStudent">
        <property name="text">
-        <string>Расписание</string>
+        <string>Студент</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QPushButton" name="btnAuth">
+      <widget class="QPushButton" name="btnTeacher">
        <property name="text">
-        <string>Аутентификация</string>
+        <string>Преподаватель</string>
        </property>
       </widget>
      </item>
@@ -68,7 +68,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>419</width>
+     <width>450</width>
      <height>21</height>
     </rect>
    </property>

@@ -26,10 +26,10 @@ class Ui_DataOfStodent
 {
 public:
     QWidget *centralWidget;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QGridLayout *gridLayoutMainWindow;
-    QPushButton *btnShedule;
-    QPushButton *btnAuth;
+    QPushButton *btnStudent;
+    QPushButton *btnTeacher;
     QSpacerItem *verticalSpacer;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
@@ -39,27 +39,27 @@ public:
     {
         if (DataOfStodent->objectName().isEmpty())
             DataOfStodent->setObjectName(QString::fromUtf8("DataOfStodent"));
-        DataOfStodent->resize(419, 176);
+        DataOfStodent->resize(450, 143);
         centralWidget = new QWidget(DataOfStodent);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(20, 30, 371, 71));
-        gridLayoutMainWindow = new QGridLayout(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(30, 10, 371, 71));
+        gridLayoutMainWindow = new QGridLayout(layoutWidget);
         gridLayoutMainWindow->setSpacing(0);
         gridLayoutMainWindow->setContentsMargins(11, 11, 11, 11);
         gridLayoutMainWindow->setObjectName(QString::fromUtf8("gridLayoutMainWindow"));
         gridLayoutMainWindow->setSizeConstraint(QLayout::SetDefaultConstraint);
         gridLayoutMainWindow->setContentsMargins(0, 0, 0, 0);
-        btnShedule = new QPushButton(widget);
-        btnShedule->setObjectName(QString::fromUtf8("btnShedule"));
+        btnStudent = new QPushButton(layoutWidget);
+        btnStudent->setObjectName(QString::fromUtf8("btnStudent"));
 
-        gridLayoutMainWindow->addWidget(btnShedule, 0, 3, 1, 1);
+        gridLayoutMainWindow->addWidget(btnStudent, 0, 3, 1, 1);
 
-        btnAuth = new QPushButton(widget);
-        btnAuth->setObjectName(QString::fromUtf8("btnAuth"));
+        btnTeacher = new QPushButton(layoutWidget);
+        btnTeacher->setObjectName(QString::fromUtf8("btnTeacher"));
 
-        gridLayoutMainWindow->addWidget(btnAuth, 0, 0, 1, 1);
+        gridLayoutMainWindow->addWidget(btnTeacher, 0, 0, 1, 1);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -71,7 +71,7 @@ public:
         DataOfStodent->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(DataOfStodent);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 419, 21));
+        menuBar->setGeometry(QRect(0, 0, 450, 21));
         DataOfStodent->setMenuBar(menuBar);
         mainToolBar = new QToolBar(DataOfStodent);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -88,8 +88,8 @@ public:
     void retranslateUi(QMainWindow *DataOfStodent)
     {
         DataOfStodent->setWindowTitle(QApplication::translate("DataOfStodent", "DataOfStodent", nullptr));
-        btnShedule->setText(QApplication::translate("DataOfStodent", "\320\240\320\260\321\201\320\277\320\270\321\201\320\260\320\275\320\270\320\265", nullptr));
-        btnAuth->setText(QApplication::translate("DataOfStodent", "\320\220\321\203\321\202\320\265\320\275\321\202\320\270\321\204\320\270\320\272\320\260\321\206\320\270\321\217", nullptr));
+        btnStudent->setText(QApplication::translate("DataOfStodent", "\320\241\321\202\321\203\320\264\320\265\320\275\321\202", nullptr));
+        btnTeacher->setText(QApplication::translate("DataOfStodent", "\320\237\321\200\320\265\320\277\320\276\320\264\320\260\320\262\320\260\321\202\320\265\320\273\321\214", nullptr));
     } // retranslateUi
 
 };

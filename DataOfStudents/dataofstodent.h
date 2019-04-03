@@ -2,6 +2,7 @@
 #define DATAOFSTODENT_H
 
 #include <QMainWindow>
+#include "authentication.h"
 
 namespace Ui {
 class DataOfStodent;
@@ -27,6 +28,9 @@ private slots:
 
 signals:
     void call_auth_windows();
+
+private:
+    Authentication *auth_form = nullptr;
 };
 
 #endif // DATAOFSTODENT_H
