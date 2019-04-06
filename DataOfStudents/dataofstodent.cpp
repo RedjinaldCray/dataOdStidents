@@ -1,6 +1,7 @@
 #include "dataofstodent.h"
 #include "ui_dataofstodent.h"
 #include "authentication.h"
+#include "mainmenuapp.h"
 #include <QDebug>
 #include <QScreen>
 
@@ -14,6 +15,8 @@ DataOfStodent::DataOfStodent(QWidget *parent) :
 
     auth_form = new Authentication();
     connect(auth_form, SIGNAL(verify_true()), SLOT(work_window()));
+
+    main_menu_form = new MainMenuApp();
 }
 
 DataOfStodent::~DataOfStodent()
@@ -28,5 +31,5 @@ void DataOfStodent::call_Auth(){
 
 void DataOfStodent::work_window() {
     qDebug()<<"ITS OKEY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
-    emit show_main_menu();
+    main_menu_form->show();
 }

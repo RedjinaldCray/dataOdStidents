@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "authentication.h"
+#include "mainmenuapp.h"
 
 namespace Ui {
 class DataOfStodent;
@@ -32,6 +33,7 @@ signals:
 
 private:
     Authentication *auth_form = nullptr;
+    MainMenuApp *main_menu_form = nullptr;
 };
 
 #endif // DATAOFSTODENT_H
