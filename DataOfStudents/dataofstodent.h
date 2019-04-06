@@ -28,6 +28,7 @@ private slots:
 
 signals:
     void call_auth_windows();
+    void show_main_menu();
 
 private:
     Authentication *auth_form = nullptr;

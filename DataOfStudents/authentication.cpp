@@ -2,13 +2,14 @@
 #include "ui_authentication.h"
 #include "dataofstodent.h"
 #include <QDebug>
+#include <QDesktopWidget>
+#include <QWidget>
+#include <QBoxLayout>
 
 Authentication::Authentication(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Authentication)
 {
-    setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::Popup);
-
     ui->setupUi(this);
     connect(ui->btnEnterVerify, SIGNAL(clicked()), this, SLOT(setData()));
 }
