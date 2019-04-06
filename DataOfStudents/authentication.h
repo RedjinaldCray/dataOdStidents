@@ -17,6 +17,12 @@ public:
 
 private:
     Ui::Authentication *ui;
+
+private slots:
+    void setData();
+
+signals:
+    void verify_true();
 };
 
 #endif // AUTHENTICATION_H

@@ -27,15 +27,18 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         dataofstodent.cpp \
-    authentication.cpp
+    authentication.cpp \
+    mainmenuapp.cpp
 
 HEADERS += \
         dataofstodent.h \
-    authentication.h
+    authentication.h \
+    mainmenuapp.h
 
 FORMS += \
         dataofstodent.ui \
-    authentication.ui
+    authentication.ui \
+    mainmenuapp.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
