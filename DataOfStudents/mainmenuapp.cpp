@@ -12,3 +12,11 @@ MainMenuApp::~MainMenuApp()
 {
     delete ui;
 }
+
+void MainMenuApp::schedule() {
+    // schedule
+}
+
+void MainMenuApp::performance() {
+    // performance
+}

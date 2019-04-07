@@ -31,5 +31,6 @@ void DataOfStodent::call_Auth(){
 
 void DataOfStodent::work_window() {
     qDebug()<<"ITS OKEY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+    auth_form->close();
     main_menu_form->show();
 }

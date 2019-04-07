@@ -17,6 +17,14 @@ public:
 
 private:
     Ui::MainMenuApp *ui;
+
+private slots:
+    void schedule();
+    void performance();
+
+signals:
+    void show_schedule();
+    void show_performance();
 };
 
 #endif // MAINMENUAPP_H
